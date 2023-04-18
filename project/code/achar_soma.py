@@ -3,6 +3,10 @@
 # Importando os tipos de dados List e deque
 from typing import List
 from collections import deque
+import sys
+
+# Define o enconding
+sys.stdout.reconfigure(encoding='utf-8')
 
 def find_sum(numbers: List[float], target_sum: float, tolerance: float = 1e-6) -> bool:
     """
