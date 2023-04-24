@@ -55,7 +55,51 @@ Nesse exemplo o terminal vai responder com ` EXISTE !! `, pelo fato de 0.50 + 2 
 
 ## Minha experiência
 
-Ao utilizar o código, observei uma performance muito boa para listas de 20 números e um tempo aceitável para listas de 30 números. Não experimentei com listas maiores, mas acredito ser possível a implementação mesmo com um desempenho não tão bom
+Ao utilizar o código, observei uma performance muito boa para listas de 20 números e um tempo aceitável para listas de 30 números. Não experimentei com listas maiores, mas acredito ser possível a implementação mesmo com um desempenho não tão bom.
+
+## Update de testes e limitações
+
+Ao testar o script com um input de 45 números houve uma queda significativa da performance:
+
+Input de teste:
+
+```python
+# Verifica se o script está sendo executado diretamente
+if __name__ == '__main__':
+    NUMBERS = [ 116.08,  237.89, 19.60,  109.68,  111.31,
+                39.20,  65.63,  135.85,  299.79,  88.42,
+                278.80,  32.80,  39.20,  94.21,  156.10,
+                181.07,  83.93,  19.60, 127.76,  172.73,
+                100.00,  83.19,  19.60,  171.29,  39.20,
+                137.51,  39.20,  83.93,  124.20,  432.12,
+                349.43, 184.07,  113.20,  271.95,  19.60,
+                71.29,  124.04, 24.50,  19.60,  161.43,
+                49.23,  81.23,  247.62, 19.39,  88.66 ]  # Exemplo de números
+
+    TARGET_SUM =  2345.07  # Exemplo de soma desejada
+```
+
+Saída:
+
+```python
+[Running] python -u "c:\busca em profundidade\project\code\achar_soma.py"
+
+EXISTE !!
+
+[Done] exited with code=0 in 345.134 seconds
+```
+
+## Hardware utlizado para teste
+
+CPU:
+
+	11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+
+Memória Ram:
+
+    8,0 GB
+
+    
 
 ## Autores
 
