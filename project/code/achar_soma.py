@@ -58,6 +58,13 @@ if __name__ == '__main__':
 
     # Remove os termos maiores que a soma desejada e ordena o array em ordem decrescente
     NUMBERS = sorted([num for num in NUMBERS if num <= TARGET_SUM], reverse=True)
+    
+    
+# Verifica se a soma de todos os números no array é menor do que a soma desejada
+if sum(NUMBERS) < TARGET_SUM:
+    print("Não é possível obter a soma desejada com os números fornecidos.")
+else:
+
 
 # Executa a função find_sum com os números e soma desejada especificados
     RESULT = find_sum(NUMBERS, TARGET_SUM)
