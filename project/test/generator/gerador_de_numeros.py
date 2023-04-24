@@ -2,6 +2,10 @@
 
 # Importa a biblioteca random, que será usada para gerar números aleatórios.
 import random
+import sys
+
+# Define o enconding
+sys.stdout.reconfigure(encoding='utf-8')
 
 def generate_random_numbers(quantity: int) -> list:
     """
