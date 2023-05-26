@@ -1,5 +1,7 @@
 # Projeto de Soma de Subconjuntos
 
+ [![GitHub](https://img.shields.io/badge/Visit-My%20Profile-0891B2?style=flat-square&logo=github)](https://github.com/Tgentil)
+
 Este projeto implementa um algoritmo de busca em profundidade para encontrar um subconjunto de números de uma lista que soma um valor específico.
 
 ## Motivação
