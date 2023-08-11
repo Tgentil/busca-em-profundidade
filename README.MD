@@ -11,7 +11,7 @@ Criei este script porque desejava verificar se uma lista com vários lançamento
 
 O projeto está estruturado da seguinte maneira:
 
-```bash
+``` bash
 busca_em_profundidade
 ├── archive
 │   ├── debug
