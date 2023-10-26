@@ -1,5 +1,7 @@
 # Projeto de Soma de Subconjuntos
 
+ [![GitHub](https://img.shields.io/badge/Visit-My%20Profile-0891B2?style=flat-square&logo=github)](https://github.com/Tgentil)
+
 Este projeto implementa um algoritmo de busca em profundidade para encontrar um subconjunto de números de uma lista que soma um valor específico.
 
 ## Motivação
@@ -9,7 +11,7 @@ Criei este script porque desejava verificar se uma lista com vários lançamento
 
 O projeto está estruturado da seguinte maneira:
 
-```
+``` bash
 busca_em_profundidade
 ├── archive
 │   ├── debug
