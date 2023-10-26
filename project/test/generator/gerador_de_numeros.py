@@ -2,6 +2,10 @@
 
 # Importa a biblioteca random, que será usada para gerar números aleatórios.
 import random
+import sys
+
+# Define o enconding
+sys.stdout.reconfigure(encoding='utf-8')
 
 def generate_random_numbers(quantity: int) -> list:
     """
@@ -20,7 +24,7 @@ def generate_random_numbers(quantity: int) -> list:
     # Loop for que irá executar a quantidade de vezes especificada no argumento "quantity".
     for _ in range(quantity):
         # Gera um número aleatório entre 0 e 100 com duas casas decimais.
-        number = round(random.uniform(0, 100), 2)
+        number = round(random.uniform(0, 10000), 2)
         # Adiciona o número gerado à lista "numbers".
         numbers.append(number)
 
@@ -29,7 +33,7 @@ def generate_random_numbers(quantity: int) -> list:
 
 # Chama a função passando o argumento "10", que é a quantidade de números a serem gerados.
 # Armazena o retorno da função na variável "NUMEROS".
-NUMEROS = generate_random_numbers(10)
+NUMEROS = generate_random_numbers(25)
 
 # Imprime a lista de números gerados pela função "generate_random_numbers".
 print(f"\nSeu array de números corretos é: {NUMEROS} \n")
@@ -63,7 +67,7 @@ def generate_random_numbers_v2(quantity: int) -> list:
 
 # Chama a função passando o argumento "5", que é a quantidade de números a serem gerados.
 # Armazena o retorno da função na variável "NUMEROSV2".
-NUMEROSV2 = generate_random_numbers_v2(5)
+NUMEROSV2 = generate_random_numbers_v2(25)
 
 # Imprime a lista de números gerados pela função "generate_random_numbers_v2".
 print(f"\nSeu array de números errados é: {NUMEROSV2} \n")
