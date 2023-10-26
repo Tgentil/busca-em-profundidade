@@ -1,5 +1,9 @@
 """_summary_ = Formata os números de uma string para uma lista de floats.
 """
+import sys
+
+# Define o enconding
+sys.stdout.reconfigure(encoding='utf-8')
 
 def format_numbers_from_string(s: str) -> list:
     """
