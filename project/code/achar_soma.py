@@ -5,6 +5,8 @@ from typing import List, Tuple
 from collections import deque
 import sys
 
+#  pylint: disable=line-too-long
+
 # Define o enconding
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -37,17 +39,17 @@ def find_sum(numbers: List[float], target_sum: float, tolerance: float = 1e-6) -
 
         # Verifica se index é maior ou igual ao comprimento da lista numbers
         if index >= len(numbers):
-            continue # Vai para o próximo elemento
+            continue  # Vai para o próximo elemento
 
         # Verifica se partial_sum atual mais o próximo número é menor ou igual ao target_sum
         if partial_sum + numbers[index] <= target_sum:
             # Adiciona duas novas tuplas à fila, uma com o próximo índice, partial_sum e subset
             # e outra com o próximo índice, partial_sum + o número atual e subset + [numbers[index]]
             queue.append((index+1, partial_sum, subset))
-            queue.append((index+1, partial_sum + numbers[index], subset + [numbers[index]]))
+            queue.append(
+                (index+1, partial_sum + numbers[index], subset + [numbers[index]]))
 
     return False, []  # Retorna False e uma lista vazia se a soma não for encontrada
-
 
 
 # Verifica se o script está sendo executado diretamente
@@ -57,9 +59,15 @@ if __name__ == '__main__':
     TARGET_SUM = 10.00  # Exemplo de soma desejada
 
     # Remove os termos maiores que a soma desejada e ordena o array em ordem decrescente
-    NUMBERS = sorted([num for num in NUMBERS if num <= TARGET_SUM], reverse=True)
+    NUMBERS = sorted(
+        [num for num in NUMBERS if num <= TARGET_SUM], reverse=True)
 
-# Executa a função find_sum com os números e soma desejada especificados
+# Verifica se a soma de todos os números no array é menor do que a soma desejada
+if sum(NUMBERS) < TARGET_SUM:
+    print("Não é possível obter a soma desejada com os números fornecidos.")
+else:
+
+    # Executa a função find_sum com os números e soma desejada especificados
     RESULT = find_sum(NUMBERS, TARGET_SUM)
 
     # Imprime uma mensagem indicando que o valor desejado foi ou não foi encontrado
@@ -67,4 +75,3 @@ if __name__ == '__main__':
         print(f"\nEXISTE !! Subconjunto: {RESULT[1]} ")
     else:
         print("\nnão tem :(")
-
