@@ -72,6 +72,6 @@ else:
 
     # Imprime uma mensagem indicando que o valor desejado foi ou não foi encontrado
     if RESULT[0]:
-        print(f"\nEXISTE !! Subconjunto: {RESULT[1]} ")
+        print(f"\nEXISTE !! Subconjunto = {RESULT[1]} ")
     else:
         print("\nnão tem :(")

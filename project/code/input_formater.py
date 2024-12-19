@@ -7,12 +7,12 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 def format_numbers_from_string(s: str) -> list:
     """
-    Formats a string containing numbers separated by newlines into a list of floats.
-    Args:
-    - s (str): A string containing numbers separated by newlines.
+    Formata uma string contendo números separados por linhas novas em uma lista de floats.
+    Argumentos:
+    - s (str): Uma string contendo números separados por linhas novas.
     
-    Returns:
-    - A list of floats, where each float is a number from the input string.
+    Retorna:
+    - Uma lista de floats, onde cada float é um número da string de entrada.
     """
 
     # Separa as linhas e formata cada número
@@ -21,8 +21,8 @@ def format_numbers_from_string(s: str) -> list:
 
 def get_input_from_console() -> str:
     """
-    Prompts the user to input a list of numbers, terminated by the string 'END'.
-    Returns a string containing the input numbers, separated by newlines.
+    Solicita ao usuário a entrada de uma lista de números, terminada pela string 'END'.
+    Retorna uma string contendo os números inseridos, separados por linhas novas.
     """
     print("Insira os números (termine com 'END'):")
     lines = []
